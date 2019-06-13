@@ -1,0 +1,24 @@
+@import '../variables';
+
+.box {
+  border: 1px solid $box-border-color;
+  box-shadow: $box-drop-shadow;
+
+  &__header {
+    padding: $box-header-padding;
+    background: $box-header-background;
+    border-bottom: 1px solid $box-border-color;
+  }
+
+  &__body {
+    padding: $box-body-padding;
+    background: $box-body-background;
+  }
+
+  &__footer {
+    @extend .box__header;
+
+    border-top: 1px solid $box-border-color;
+    border-bottom: 0;
+  }
+}

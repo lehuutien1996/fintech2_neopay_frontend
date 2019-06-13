@@ -12,6 +12,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  .container {
+    width: 768px;
+    margin: auto;
 
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: {
+        left: $padding-base;
+        right: $padding-base;
+      }
+    }
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+    background-color: $color-primary-light;
+  }
 </style>

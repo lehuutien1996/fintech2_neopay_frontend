@@ -1,0 +1,35 @@
+@import "../variables";
+
+.btn {
+  font-size: $button-font-size;
+  font-weight: 700;
+  padding: $button-padding;
+  background: $button-background;
+  border: 1px solid $button-border-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($button-background, 2%);
+  }
+
+  &:active {
+    background-color: darken($button-background, 5%);
+  }
+
+  &-primary {
+    background: $button-background-primary;
+    border-color: $button-border-color-primary;
+
+    &:hover {
+      background-color: darken($button-background-primary, 5%);
+    }
+
+    &:active {
+      background-color: darken($button-background-primary, 10%);
+    }
+
+    &.btn-outline {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.form-group {
+  margin: {
+    bottom: $form-group-margin;
+  }
+
+  .control-label {
+    color: $form-label-color;
+    font-size: $font-size-m;
+    display: block;
+    font-weight: 700;
+    margin: {
+      bottom: $form-label-margin;
+    }
+  }
+}
+
+.form-control {
+  width: 100%;
+  font-size: $form-control-font-size;
+  background-color: $white;
+  border: 1px solid $color-primary;
+  padding: $form-control-padding;
+  border-radius: $form-control-border-radius;
+}

@@ -1,0 +1,66 @@
+// Global Colors
+$white: #fff;
+
+// PRIMARY COLORS
+$color-primary:       #FFCA28;
+$color-primary-dark:  #FFB300;
+$color-primary-light: #FFD54F;
+
+// SECONDARY COLORS
+$color-secondary: #78909C;
+$color-secondary-dark: #607D8B;
+$color-secondary-light: #90A4AE;
+
+// PRIMARY TEXT COLORS
+$color-text-primary: #212121;
+
+// SECONDARY TEXT COLORS
+$color-text-secondary: #F5F5F5;
+
+// PADDING & MARGIN Base
+$padding-base: 15px;
+$margin-base: 15px;
+
+// FONT SIZE VARIANTS
+$font-size-xxl: 3em;
+$font-size-xl:  2.5em;
+$font-size-l:   2em;
+$font-size-m:   1em;
+$font-size-s:   0.8em;
+$font-size-xs:  0.5em;
+$font-size-xxs: 0.3em;
+
+// Form Group
+$form-group-margin:           $padding-base / 2;
+
+// Form Control Label
+$form-label-color:            $color-text-primary;
+$form-label-margin:           $padding-base / 3;
+
+// Form Control
+$form-control-font-size:      $font-size-m;
+$form-control-padding:        12px 16px;
+$form-control-border-radius:  0px;
+
+// Box
+$box-border-color: lighten($color-secondary, 36%);
+$box-drop-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
+
+$box-header-padding: $padding-base;
+$box-header-background: $white;
+
+$box-body-padding: $padding-base;
+$box-body-background: $white;
+
+// Button
+$button-padding: #{0.8 * $padding-base} $padding-base;
+$button-background: $white;
+$button-border-color: darken($white, 6.5%);
+$button-font-size: $font-size-m;
+
+$button-background-primary: $color-primary;
+$button-border-color-primary: darken($color-primary, 6.5%);
+
+// Grid
+// - Row
+$row-margin: -$margin-base;
