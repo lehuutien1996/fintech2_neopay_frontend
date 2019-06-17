@@ -24,3 +24,9 @@
   padding: $form-control-padding;
   border-radius: $form-control-border-radius;
 }
+
+.control-error {
+  font-weight: 700;
+  color: $form-control-error-font-color;
+  font-size: $form-control-error-font-size;
+}

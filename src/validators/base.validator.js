@@ -75,6 +75,10 @@ export default class BaseValidator {
   }
 
   errors() {
+    if (!this.validator) {
+      return null;
+    }
+
     return this.validator.errors || null;
   }
 }
