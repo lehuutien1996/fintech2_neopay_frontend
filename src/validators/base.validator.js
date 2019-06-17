@@ -13,6 +13,17 @@ export default class BaseValidator {
   data = {};
 
   /**
+   * Getter errors object
+   */
+  get errors() {
+    if (!this.validator) {
+      return null;
+    }
+
+    return this.validator.errors || null;
+  }
+
+  /**
    * Set data for doing validation
    *
    * @param {Object} data Data for validation
@@ -72,13 +83,5 @@ export default class BaseValidator {
     this.initial();
 
     return this.validator.fails() || false;
-  }
-
-  errors() {
-    if (!this.validator) {
-      return null;
-    }
-
-    return this.validator.errors || null;
   }
 }

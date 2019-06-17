@@ -8,7 +8,7 @@
       <div class="form-group">
         <label class="control-label">
           Email
-          <span class="control-error" v-if="validator.errors() && validator.errors().has('email')">{{ validator.errors().first('email') }}</span>
+          <span class="control-error" v-if="validator.errors && validator.errors.has('email')">{{ validator.errors.first('email') }}</span>
         </label>
         <input class="form-control" type="text" name="email" placeholder="Địa chỉ Email" autocomplete="off"
           v-model="email"
@@ -17,7 +17,7 @@
       <div class="form-group">
         <label class="control-label">
           Password
-          <span class="control-error" v-if="validator.errors() && validator.errors().has('password')">{{ validator.errors().first('password') }}</span>
+          <span class="control-error" v-if="validator.errors && validator.errors.has('password')">{{ validator.errors.first('password') }}</span>
         </label>
         <input class="form-control" type="password" name="password" placeholder="Mật khẩu"
           v-model="password"
